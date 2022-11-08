@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Byline from "./components/Byline";
 import Category from "./components/Category";
+import Footer from "./components/Footer";
 import Headline from "./components/Headline";
 import Nav from "./components/Nav";
 import ProjectCard from "./components/ProjectCard";
@@ -48,6 +49,7 @@ function App() {
             return <ProjectCard name={project} key={index} />;
           })}
         </div>
+        <Footer />
       </div>
     </div>
   );
