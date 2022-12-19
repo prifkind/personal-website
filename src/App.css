@@ -49,6 +49,7 @@ h2 {
 }
 
 .headline-container {
+  margin-top: 10%;
   border: 1px solid greenyellow;
   text-align: left;
   font-family: "Noto Serif Khmer", serif;
@@ -56,6 +57,7 @@ h2 {
 }
 
 .text-container {
+  margin-top: 200%;
   font-family: "Noto Serif Khmer", serif;
   font-size: 18px;
   color: white;
