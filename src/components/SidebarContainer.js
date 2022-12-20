@@ -2,7 +2,9 @@ import React from "react";
 import HeadlineContainer from "./HeadlineContainer";
 import TextContainer from "./TextContainer";
 
-export default function SidebarContainer() {
+export default function SidebarContainer(props) {
+  const { imgStatus, setImgStatus } = props;
+
   return (
     <span>
       <span className="sidebar-container">
@@ -20,7 +22,9 @@ export default function SidebarContainer() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
             `}
-          imgClass={`class1`}
+          imgId={`img1`}
+          imgStatus={imgStatus}
+          setImgStatus={setImgStatus}
         />
         <TextContainer
           content={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,7 +34,10 @@ export default function SidebarContainer() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.`}
+          imgId={`img2`}
           imgClass={`class2`}
+          imgStatus={imgStatus}
+          setImgStatus={setImgStatus}
         />
       </span>
     </span>

@@ -1,30 +1,37 @@
-import React, { useEffect, useState } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import React, { useEffect, useRef, useState } from "react";
+import { useInView, useView } from "react-intersection-observer";
 
 export default function TextContainer(props) {
-  const { content, imgClass } = props;
+  const { content, imgId, imgStatus, setImgStatus } = props;
+  const { ref, inView, entry } = useInView();
 
-  const [scrolling, setScrolling] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
+  // const [scrolling, setScrolling] = useState(false);
+  // const [scrollTop, setScrollTop] = useState(0);
+
+  // useEffect(() => {
+  //   const onScroll = (e) => {
+  //     console.log(`scrolled`)
+  //     setImgStatus({ ...imgStatus, [imgId]: true });
+  //     setScrollTop(e.target.documentElement.scrollTop);
+  //     setScrolling(e.target.documentElement.scrollTop > scrollTop);
+  //   };
+  //   window.addEventListener("scroll", onScroll);
+
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, [scrollTop]);
 
   useEffect(() => {
-    const onScroll = (e) => {
-      setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(e.target.documentElement.scrollTop > scrollTop);
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+    inView
+      ? setImgStatus({ ...imgStatus, [imgId]: true })
+      : setImgStatus({ ...imgStatus, [imgId]: false });
+  }, [inView]);
 
   return (
     <div>
-      <div className="text-container">
+      <div className="text-container" ref={ref}>
         <div>{content}</div>
+        <div>{console.log(inView)}</div>
       </div>
-      <Slide direction={'up'} >
-        <img src="../../public/placeholder.png" className={imgClass}/>
-      </Slide>
     </div>
   );
 }
