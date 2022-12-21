@@ -5,7 +5,7 @@ export default function ImageContainer(props) {
   const { imgClass } = props;
 
   return (
-    <div className="img-container">
+    <div className={imgClass}>
       <Slide direction={"up"}>
         <img src="https://picsum.photos/200/300" className={imgClass} />
       </Slide>
