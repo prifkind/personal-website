@@ -2,12 +2,16 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 
 export default function ImageContainer(props) {
-  const { imgClass } = props;
+  const { imgClass, imgUrl } = props;
 
   return (
     <div className={imgClass}>
       <Slide direction={"up"}>
-        <img src="https://picsum.photos/200/300" className={imgClass} />
+        <img
+          src={imgUrl}
+          alt="peter wearing a headlamp and pointing dramatically"
+          className={imgClass}
+        />
       </Slide>
     </div>
   );
