@@ -13,20 +13,46 @@ export default function Content(props) {
   const { imgStatus } = props;
   return (
     <div className="img-container">
-      <ImageContainer imgClass={`img1 ${imgStatus.img1}`} imgUrl={headlamp} />
+      <ImageContainer
+        imgClass={`img1 ${imgStatus.img1}`}
+        imgUrl={headlamp}
+        imgStatus={imgStatus.img1}
+      />
       <ImageContainer
         imgClass={`img2 ${imgStatus.img2}`}
         imgUrl={dangerousCliff}
+        imgStatus={imgStatus.img2}
       />
       <ImageContainer
         imgClass={`img3 ${imgStatus.img3}`}
         imgUrl={adventureAwaits}
+        imgStatus={imgStatus.img3}
       />
-      <ImageContainer imgClass={`img4 ${imgStatus.img4}`} imgUrl={portrait} />
-      <ImageContainer imgClass={`img5 ${imgStatus.img5}`} imgUrl={plant} />
-      <ImageContainer imgClass={`img6 ${imgStatus.img6}`} imgUrl={plane} />
-      <ImageContainer imgClass={`img7 ${imgStatus.img7}`} imgUrl={space} />
-      <ImageContainer imgClass={`img8 ${imgStatus.img8}`} imgUrl={chuck} />
+      <ImageContainer
+        imgClass={`img4 ${imgStatus.img4}`}
+        imgUrl={portrait}
+        imgStatus={imgStatus.img4}
+      />
+      <ImageContainer
+        imgClass={`img5 ${imgStatus.img5}`}
+        imgUrl={plant}
+        imgStatus={imgStatus.img5}
+      />
+      <ImageContainer
+        imgClass={`img6 ${imgStatus.img6}`}
+        imgUrl={plane}
+        imgStatus={imgStatus.img6}
+      />
+      <ImageContainer
+        imgClass={`img7 ${imgStatus.img7}`}
+        imgUrl={space}
+        imgStatus={imgStatus.img7}
+      />
+      <ImageContainer
+        imgClass={`img8 ${imgStatus.img8}`}
+        imgUrl={chuck}
+        imgStatus={imgStatus.img8}
+      />
     </div>
   );
 }
