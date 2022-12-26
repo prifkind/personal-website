@@ -33,20 +33,27 @@ h2 {
 
 .sidebar-menu {
   height: 20vh;
-  display: flex
 }
 
-.sidebar-hamburger {
-  max-width: 20%;
+.sidebar-menu-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .social-logo {
   max-height: 50px;
   max-width: 50px;
+  margin: 5px;
+}
+
+.social-link {
+  text-decoration: none
 }
 
 .social-link:visited {
-  color: white
+  color: white;
+  text-decoration: none;
 }
 
 .sidebar-container {
@@ -61,7 +68,7 @@ h2 {
 
 .headline-container {
   margin-top: 10%;
-  margin-left:1%;
+  margin-left: 1%;
   text-align: left;
   font-family: "Noto Serif Khmer", serif;
   color: white;
@@ -141,7 +148,7 @@ h2 {
 
 .img7 {
   position: absolute;
-  bottom: 48%;
+  bottom: 40%;
   left: 5%;
   z-index: 6;
 }
