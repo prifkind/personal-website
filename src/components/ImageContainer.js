@@ -5,8 +5,8 @@ export default function ImageContainer(props) {
   const { imgClass, imgStatus, imgUrl } = props;
 
   return imgStatus ? (
-    <div>
-      <Slide direction={"up"} duration={2000} className={imgClass}>
+    <div className={imgClass}>
+      <Slide direction={"up"} duration={1000} >
         <img
           src={imgUrl}
           alt="peter wearing a headlamp and pointing dramatically"

@@ -8,6 +8,7 @@ function App() {
     img1: false,
     img2: false,
     img3: false,
+    img3a: false,
     img4: false,
     img5: false,
     img6: false,
