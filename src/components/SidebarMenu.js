@@ -8,7 +8,13 @@ export default function SidebarMenu() {
   return (
     <div className="sidebar-menu">
       <span>
-        <Hamburger toggled={isOpen} toggle={setOpen} size={25} duration={0.6} />
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          size={30}
+          duration={0.6}
+          className="sidebar-hamburger"
+        />
         {isOpen ? (
           <div>
             <div className="sidebar-menu-item">

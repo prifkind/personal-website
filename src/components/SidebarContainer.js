@@ -86,6 +86,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
         />
+        <HeadlineContainer headline={`FAQs`} />
       </span>
     </span>
   );
