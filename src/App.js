@@ -15,10 +15,16 @@ function App() {
     img7: false,
     img8: false,
   });
+  const [scrollDirection, setScrollDirection] = useState("arrowDown");
 
   return (
     <div className="App">
-      <Sidebar imgStatus={imgStatus} setImgStatus={setImgStatus} />
+      <Sidebar
+        imgStatus={imgStatus}
+        setImgStatus={setImgStatus}
+        scrollDirection={scrollDirection}
+        setScrollDirection={setScrollDirection}
+      />
       <Content imgStatus={imgStatus} />
     </div>
   );

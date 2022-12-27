@@ -1,14 +1,11 @@
 h1 {
   margin: 10px 0 10px 0;
   font-size: 36px;
-  font-family: "Noto Serif Khmer", serif;
 }
 
 h2 {
   margin: 10px 0 10px 0;
   font-size: 20px;
-  font-family: "Noto Serif Khmer", serif;
-
 }
 
 .App {
@@ -21,7 +18,7 @@ h2 {
   background-attachment: fixed;
   perspective: 1px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   overflow: hidden;
 }
 
