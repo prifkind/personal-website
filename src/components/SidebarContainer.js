@@ -236,6 +236,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </div>
           <br />
         </div>
+        <br />
         <div ref={bottom}></div>
       </span>
     </span>
