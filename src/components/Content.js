@@ -1,13 +1,15 @@
 import React from "react";
 import ImageContainer from "./ImageContainer";
-import adventureAwaits from "../images/AdventureAwaits.png";
-import chuck from "../images/Chuck.png";
-import dangerousCliff from "../images/DangerousCliff.png";
-import headlamp from "../images/Headlamp.png";
-import plane from "../images/Plane.png";
-import plant from "../images/Plant.png";
-import portrait from "../images/Portrait.png";
-import space from "../images/Space.png";
+import adventureAwaits from "../images/AdventureAwaits-Framed.png";
+import chuck from "../images/Chuck-Framed.png";
+import dangerousCliff from "../images/DangerousCliff-Framed.png";
+import entremet from "../images/Entremet-Framed.png"
+import graduation from "../images/Graduation-Framed.png";
+import headlamp from "../images/Headlamp-Framed.png";
+import plane from "../images/Plane-Framed.png";
+import plant from "../images/Plant-Framed.png";
+import portrait from "../images/Portrait-Framed.png";
+import space from "../images/Space-Framed.png";
 
 export default function Content(props) {
   const { imgStatus } = props;
@@ -25,8 +27,13 @@ export default function Content(props) {
       />
       <ImageContainer
         imgClass={`img3 ${imgStatus.img3}`}
-        imgUrl={adventureAwaits}
+        imgUrl={graduation}
         imgStatus={imgStatus.img3}
+      />
+      <ImageContainer
+        imgClass={`img3a ${imgStatus.img3a}`}
+        imgUrl={entremet}
+        imgStatus={imgStatus.img3a}
       />
       <ImageContainer
         imgClass={`img4 ${imgStatus.img4}`}

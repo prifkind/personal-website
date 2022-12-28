@@ -11,34 +11,60 @@ h2 {
 .App {
   width: 100vw;
   height: 100vh;
+  max-height: 100%;
   text-align: center;
   background-image: url("../public/Background.png");
   background-size: cover;
   background-attachment: fixed;
   perspective: 1px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  overflow: hidden;
 }
 
 .sidebar {
   height: 100vh;
   width: 30vw;
-  border: 1px solid white;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   font-family: "Noto Serif Khmer", serif;
   color: white;
   font-size: 36px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .sidebar-menu {
   height: 20vh;
 }
 
+.sidebar-hamburger {
+  margin-top: 5px;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-logo {
+  max-height: 50px;
+  max-width: 50px;
+  margin: 5px;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.social-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .sidebar-container {
   height: 75vh;
-  border: 1px solid yellow;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -47,9 +73,13 @@ h2 {
   overflow-y: scroll;
 }
 
+.sidebar-container::-webkit-scrollbar {
+  display: none;
+}
+
 .headline-container {
   margin-top: 10%;
-  border: 1px solid greenyellow;
+  margin-left: 1%;
   text-align: left;
   font-family: "Noto Serif Khmer", serif;
   color: white;
@@ -57,6 +87,7 @@ h2 {
 
 .text-container {
   margin-top: 70vh;
+  margin-bottom: 5vh;
   font-family: "Noto Serif Khmer", serif;
   font-size: 18px;
   color: white;
@@ -64,9 +95,9 @@ h2 {
 
 .img-container {
   height: 100vh;
-  width: 70vw;
+  width: 65vw;
+  max-width: 70%;
   position: relative;
-  border: 1px solid orange;
   margin: 0 5% 0 0%;
   flex-grow: 3;
   color: white;
@@ -75,22 +106,30 @@ h2 {
 .img1 {
   position: absolute;
   top: 10%;
-  left: 70%;
+  left: 65%;
   z-index: 0;
 }
 
 .img2 {
   position: absolute;
   bottom: 10%;
-  right: 70%;
+  right: 60%;
   z-index: 1;
   transform: rotate(3deg);
 }
 
 .img3 {
   position: absolute;
-  bottom: 15%;
+  top: 5%;
   left: 20%;
+  z-index: 2;
+  transform: rotate(-4deg);
+}
+
+.img3a {
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
   z-index: 2;
   transform: rotate(-4deg);
 }
@@ -101,7 +140,6 @@ h2 {
   right: 5%;
   z-index: 3;
   transform: rotate(1deg);
-  border: 0.5px solid black;
 }
 
 .img5 {
@@ -122,16 +160,17 @@ h2 {
 
 .img7 {
   position: absolute;
-  bottom: 48%;
+  bottom: 40%;
   left: 5%;
   z-index: 6;
 }
 
 .img8 {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 35%;
+  left: 15%;
   z-index: 7;
+  transform: rotate(-2deg);
 }
 
 .false {
