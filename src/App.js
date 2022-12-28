@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Content from "./components/Content";
 import Sidebar from "./components/Sidebar";
@@ -16,18 +16,40 @@ function App() {
     img8: false,
   });
   const [scrollDirection, setScrollDirection] = useState("arrowDown");
+  const [screenSize, setScreenSize] = useState();
 
-  return (
-    <div className="App">
-      <Sidebar
-        imgStatus={imgStatus}
-        setImgStatus={setImgStatus}
-        scrollDirection={scrollDirection}
-        setScrollDirection={setScrollDirection}
-      />
-      <Content imgStatus={imgStatus} />
-    </div>
-  );
+  useEffect(() => {
+    // Check if the screen size is smaller than 400px
+    window.matchMedia("(max-width: 420px)").matches
+      ? setScreenSize(true)
+      : setScreenSize(false);
+  }, [screenSize]);
+
+  //If the screen size is smaller than 400px, only render the Sidebar component
+  if (screenSize) {
+    return (
+      <div className="App">
+        <Sidebar
+          imgStatus={imgStatus}
+          setImgStatus={setImgStatus}
+          screenSize={screenSize}
+          scrollDirection={scrollDirection}
+          setScrollDirection={setScrollDirection}
+        />
+      </div>
+    );
+  } else
+    return (
+      <div className="App">
+        <Sidebar
+          imgStatus={imgStatus}
+          setImgStatus={setImgStatus}
+          scrollDirection={scrollDirection}
+          setScrollDirection={setScrollDirection}
+        />
+        <Content imgStatus={imgStatus} />
+      </div>
+    );
 }
 
 export default App;
