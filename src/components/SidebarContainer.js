@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Slide } from "react-awesome-reveal";
+
 import HeadlineContainer from "./HeadlineContainer";
 import TextContainer from "./TextContainer";
-import { Slide } from "react-awesome-reveal";
 import headlampMobile from "../images/Headlamp-Framed-Mobile.png";
 import dangerousCliffMobile from "../images/DangerousCliff-Framed-Mobile.png";
 import graduationMobile from "../images/Graduation-Framed-Mobile.png";
@@ -98,7 +99,25 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={`I did work in restaurant management though.  And then joined Oracle installing point-of-sale systems for restaurants and hotels.  Eventually I found my way to a startup called UltraLinq.`}
+          content={[
+            `I did work in restaurant management though.  And then joined `,
+            <a
+              href="https://www.oracle.com/industries/micros/"
+              class="faq-link"
+              target="_blank"
+            >
+              Oracle
+            </a>,
+            ` installing point-of-sale systems for restaurants and hotels.  Eventually I found my way to a startup called `,
+            <a
+              href="https://www.ultralinq.com"
+              class="faq-link"
+              target="_blank"
+            >
+              UltraLinq
+            </a>,
+            ` where I lead the Client Service team.`,
+          ]}
           imgId={`img4`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -112,7 +131,11 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={`I built a large, global team responsible for the customer service, user support, and implementation for hundreds of thousands of users.`}
+          content={[
+            `I built a large, global team responsible for customer service, user support, and implementation for hundreds of thousands of users.`,
+            <br />,<br />,
+            `I met many talented people at UltraLinq, and was privileged to have the opportunity to mentor a few.`,
+          ]}
           imgId={`img5`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -126,7 +149,17 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={`After that I designed the service model for an OCC-chartered national bank.`}
+          content={[
+            `From there I joined the luanch team of a startup bank called `,
+            <a
+              href="https://www.grasshopper.bank"
+              class="faq-link"
+              target="_blank"
+            >
+              Grasshopper
+            </a>,
+            ` where I designed the service model.  Opening a bank was an amazing experience.`,
+          ]}
           imgId={`img6`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -167,7 +200,42 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             />
           </Slide>
         ) : null}
-        <HeadlineContainer headline={`FAQs`} />
+        <div className="faq-container">
+          <HeadlineContainer headline={`FAQs`} />
+          <div className="faq">
+            <div className="faq-question">
+              Q: If you went to culinary school, why are there no recipies on
+              this page?
+            </div>
+            <div className="faq-answer">
+              A: I didn't really think anyone was coming here for recipies, but
+              ok. Here's my recipe for{" "}
+              <a
+                className="faq-link"
+                href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
+              >
+                chocolate cookies with tahini.
+              </a>
+            </div>
+          </div>
+          <br />
+          <div className="faq">
+            <div className="faq-question">Q: Did you really go to space?</div>
+            <div className="faq-answer">A: No.</div>
+          </div>
+          <br />
+          <div className="faq">
+            <div className="faq-question">
+              Q: Is it true you once drove the Oscar Mayer Weinermobile?
+            </div>
+            <div className="faq-answer">
+              A: Absolutely true. It happened in the spring of 2001. My friend
+              Tiffany and I had to stand in stand in the road to stop traffic,
+              but it was worth it.
+            </div>
+          </div>
+          <br />
+        </div>
         <div ref={bottom}></div>
       </span>
     </span>
