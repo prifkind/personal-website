@@ -6,7 +6,7 @@ import SidebarContainer from "./SidebarContainer";
 import SidebarMenu from "./SidebarMenu";
 
 export default function Sidebar(props) {
-  const { imgStatus, setImgStatus, scrollDirection, setScrollDirection } =
+  const { imgStatus, screenSize, scrollDirection, setImgStatus, setScrollDirection } =
     props;
 
   useEffect(() => {}, [scrollDirection]);
@@ -18,7 +18,7 @@ export default function Sidebar(props) {
         <SidebarContainer
           setImgStatus={setImgStatus}
           imgStatus={imgStatus}
-          scrollDirection={scrollDirection}
+          screenSize={screenSize}
           setScrollDirection={setScrollDirection}
         />
         <div>
