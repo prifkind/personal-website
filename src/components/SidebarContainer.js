@@ -7,6 +7,7 @@ import TextContainer from "./TextContainer";
 import headlampMobile from "../images/Headlamp-Framed-Mobile.png";
 import dangerousCliffMobile from "../images/DangerousCliff-Framed-Mobile.png";
 import graduationMobile from "../images/Graduation-Framed-Mobile.png";
+import grasshopperMobile from "../images/Grasshopper-Framed-Mobile.png";
 import entremetMobile from "../images/Entremet-Framed-Mobile.png";
 import portraitMobile from "../images/Portrait-Framed-Mobile.png";
 import plantMobile from "../images/Plant-Framed-Mobile.png";
@@ -103,7 +104,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             `I did work in restaurant management though.  And then joined `,
             <a
               href="https://www.oracle.com/industries/micros/"
-              class="faq-link"
+              className="faq-link"
               target="_blank"
             >
               Oracle
@@ -111,7 +112,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             ` installing point-of-sale systems for restaurants and hotels.  Eventually I found my way to a startup called `,
             <a
               href="https://www.ultralinq.com"
-              class="faq-link"
+              className="faq-link"
               target="_blank"
             >
               UltraLinq
@@ -133,8 +134,9 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
         <TextContainer
           content={[
             `I built a large, global team responsible for customer service, user support, and implementation for hundreds of thousands of users.`,
-            <br />,<br />,
-            `I met many talented people at UltraLinq, and was privileged to have the opportunity to mentor a few.`,
+            <br />,
+            <br />,
+            `I met many talented people at UltraLinq, and was privileged to mentor a few.`,
           ]}
           imgId={`img5`}
           imgStatus={imgStatus}
@@ -153,17 +155,26 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             `From there I joined the luanch team of a startup bank called `,
             <a
               href="https://www.grasshopper.bank"
-              class="faq-link"
+              className="faq-link"
               target="_blank"
             >
               Grasshopper
             </a>,
             ` where I designed the service model.  Opening a bank was an amazing experience.`,
           ]}
-          imgId={`img6`}
+          imgId={`img6a`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
         />
+        {screenSize ? (
+          <Slide direction={"up"} duration={1000} triggerOnce={true}>
+            <img
+              src={grasshopperMobile}
+              alt="A group picture of people around a computer"
+            />
+          </Slide>
+        ) : null}
+        <TextContainer content={[`There I met my coding mentor who inspired me to learn more about software engineering.`, <br />, <br />, `It had the makings of a direction, but I wasn't sure.  After all, what do you do once you open a bank?  Running it wasn't nearly as fun as the launch part.`]} imgId={`img6`} imgStatus={imgStatus} setImgStatus={setImgStatus} />
         {screenSize ? (
           <Slide direction={"up"} duration={1000} triggerOnce={true}>
             <img
@@ -173,7 +184,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={`I worked in the consumer space and built a headless service department meant to support as many users as possible with as few people as possible.`}
+          content={[`During a conversation in`, <a href="https://www.supportdriven.com" className="faq-link">Support Driven</a>, `, I met an incredible Product Manager.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`, <br />, <br />, `It was a crazy idea, and it worked.`]}
           imgId={`img7`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -204,12 +215,66 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           <HeadlineContainer headline={`FAQs`} />
           <div className="faq">
             <div className="faq-question">
+              Q: Why did you make this website?
+            </div>
+            <div className="faq-answer">
+              A: My career is pretty textured. That can be a tough thing to
+              communicate on a resume; so, I thought this website might help me
+              introduce myself in a narrative way.
+            </div>
+          </div>
+          <br />
+          <div className="faq">
+            <div className="faq-question">
+              Q: And now you want to be a software engineer?
+            </div>
+            <div className="faq-answer">
+              A: That's right! I built some great projects during my software
+              engineering immersive at Fullstack Academy, including:
+              <ul>
+                <li>
+                  An ecommerce website with a heavy focus on gifting and
+                  algorithimic gift suggestions
+                </li>
+                <li>An Ethereum smart contract deployed on the main net</li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <div className="faq">
+            <div className="faq-question">Q: What are you working on now?</div>
+            <div className="faq-answer">
+              A: Since graduating from Fullstack Academy in December 2022, I've
+              been building several projects.
+              <ul>
+                <li>I built this website</li>
+                <li>
+                  I'm working on a full stack customer service tool to help
+                  agents
+                </li>
+                <li>
+                  A few fun projects focused on Magic: the Gathering (probably
+                  the greatest game ever made).
+                </li>
+              </ul>
+              <div>
+                Check out my{" "}
+                <a href="https://www.github.com/prifkind" className="faq-link">
+                  Github repos
+                </a>{" "}
+                for more info.
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="faq">
+            <div className="faq-question">
               Q: If you went to culinary school, why are there no recipies on
               this page?
             </div>
             <div className="faq-answer">
               A: I didn't really think anyone was coming here for recipies, but
-              ok. Here's my recipe for{" "}
+              ok. Here's my recipe for
               <a
                 className="faq-link"
                 href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
@@ -230,8 +295,8 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             </div>
             <div className="faq-answer">
               A: Absolutely true. It happened in the spring of 2001. My friend
-              Tiffany and I had to stand in stand in the road to stop traffic,
-              but it was worth it.
+              Tiffany and I had to stand in the road to stop traffic, but it was
+              worth it.
             </div>
           </div>
           <br />

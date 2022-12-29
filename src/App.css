@@ -185,7 +185,15 @@ h2 {
   position: absolute;
   top: 30%;
   left: 35%;
-  z-index: 5;
+  z-index: 7;
+  transform: rotate(1deg);
+}
+
+.img6a {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  z-index: 6;
   transform: rotate(1deg);
 }
 
@@ -193,14 +201,14 @@ h2 {
   position: absolute;
   bottom: 40%;
   left: 5%;
-  z-index: 6;
+  z-index: 7;
 }
 
 .img8 {
   position: absolute;
   top: 35%;
   left: 15%;
-  z-index: 7;
+  z-index: 8;
   transform: rotate(-2deg);
 }
 
@@ -240,8 +248,8 @@ h2 {
 }
 
 /* Mobile devices */
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .sidebar {
-    width: 100vw;
+    width: 90vw;
   }
 }

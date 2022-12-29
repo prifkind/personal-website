@@ -12,6 +12,7 @@ function App() {
     img4: false,
     img5: false,
     img6: false,
+    img6a: false,
     img7: false,
     img8: false,
   });
@@ -20,7 +21,7 @@ function App() {
 
   useEffect(() => {
     // Check if the screen size is smaller than 400px
-    window.matchMedia("(max-width: 420px)").matches
+    window.matchMedia("(max-width: 450px)").matches
       ? setScreenSize(true)
       : setScreenSize(false);
   }, [screenSize]);
