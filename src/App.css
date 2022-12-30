@@ -248,7 +248,7 @@ h2 {
 }
 
 /* Mobile devices */
-@media (max-width: 767px) {
+@media (min-widht: 412px) and (max-width: 767px) {
   .sidebar {
     width: 90vw;
   }
