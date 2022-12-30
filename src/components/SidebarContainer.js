@@ -174,7 +174,17 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             />
           </Slide>
         ) : null}
-        <TextContainer content={[`There I met my coding mentor who inspired me to learn more about software engineering.`, <br />, <br />, `It had the makings of a direction, but I wasn't sure.  After all, what do you do once you open a bank?  Running it wasn't nearly as fun as the launch part.`]} imgId={`img6`} imgStatus={imgStatus} setImgStatus={setImgStatus} />
+        <TextContainer
+          content={[
+            `There I met my coding mentor who inspired me to learn more about software engineering.`,
+            <br />,
+            <br />,
+            `It had the makings of a direction, but I wasn't sure.  After all, what do you do once you open a bank?  Running it wasn't nearly as fun as the launch part.`,
+          ]}
+          imgId={`img6`}
+          imgStatus={imgStatus}
+          setImgStatus={setImgStatus}
+        />
         {screenSize ? (
           <Slide direction={"up"} duration={1000} triggerOnce={true}>
             <img
@@ -184,7 +194,16 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={[`During a conversation in`, <a href="https://www.supportdriven.com" className="faq-link">Support Driven</a>, `, I met an incredible Product Manager.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`, <br />, <br />, `It was a crazy idea, and it worked.`]}
+          content={[
+            `During a conversation in`,
+            <a href="https://www.supportdriven.com" className="faq-link">
+              Support Driven
+            </a>,
+            `, I met an incredible Product Manager.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`,
+            <br />,
+            <br />,
+            `It was a crazy idea, and it worked.`,
+          ]}
           imgId={`img7`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -258,7 +277,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                 </li>
               </ul>
               <div>
-                Check out my{" "}
+                Check out my
                 <a href="https://www.github.com/prifkind" className="faq-link">
                   Github repos
                 </a>{" "}

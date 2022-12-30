@@ -20,7 +20,8 @@ function App() {
   const [screenSize, setScreenSize] = useState();
 
   useEffect(() => {
-    // Check if the screen size is smaller than 400px
+    // Check if the screen size is smaller than 767px
+    console.log(`${window.matchMedia("(max-width: 767px)").matches}`);
     window.matchMedia("(max-width: 767px)").matches
       ? setScreenSize(true)
       : setScreenSize(false);

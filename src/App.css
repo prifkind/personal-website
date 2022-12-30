@@ -252,7 +252,7 @@ body {
 }
 
 /* Mobile devices */
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
   .sidebar {
     width: 100vw;
   }
