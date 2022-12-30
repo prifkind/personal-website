@@ -8,6 +8,10 @@ h2 {
   font-size: 20px;
 }
 
+body {
+  margin: 0;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -248,8 +252,8 @@ h2 {
 }
 
 /* Mobile devices */
-@media (min-widht: 412px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .sidebar {
-    width: 90vw;
+    width: 100vw;
   }
 }
