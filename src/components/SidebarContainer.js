@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Slide } from "react-awesome-reveal";
-
 import HeadlineContainer from "./HeadlineContainer";
 import TextContainer from "./TextContainer";
 import headlampMobile from "../images/Headlamp-Framed-Mobile.png";
@@ -219,7 +218,15 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           </Slide>
         ) : null}
         <TextContainer
-          content={`And I went to bootcamp to flex my software engineering skills.`}
+          content={[
+            `And through it all I was building my software engineering skills, making full stack applications for my teams to use. I enjoyed it so much that I took the leap and attended Fullstack Academy's software engineering immersive.`,
+            <br />,
+            <br />,
+            `If you're interested in learning more about how my experience can help your business, I would love `,
+            <a href="mailto:prifkind@gmail.com" className="faq-link">
+              to chat futher!
+            </a>,
+          ]}
           imgId={`img8`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
@@ -251,8 +258,23 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
               engineering immersive at Fullstack Academy, including:`,
                 <ul>
                   <li>
-                    An ecommerce website with a heavy focus on gifting and
-                    algorithimic gift suggestions
+                    <a
+                      href="https://cadeau-5cgu.onrender.com"
+                      className="faq-link"
+                    >
+                      Cadeau
+                    </a>{" "}
+                    - a gift-giving website that algorithmically makes relevant
+                    gift selections.
+                  </li>
+                  <li>
+                    <a
+                      href="https://grace-shopper-sage-10g9.onrender.com"
+                      className="faq-link"
+                    >
+                      Sage
+                    </a>{" "}
+                    - an full-stack ecommerce website
                   </li>
                   <li>An Ethereum smart contract deployed on the main net</li>
                 </ul>,
