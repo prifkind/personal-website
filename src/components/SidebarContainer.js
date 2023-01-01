@@ -273,10 +273,18 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                       className="faq-link"
                     >
                       Sage
-                    </a>{" "}
+                    </a>
                     - an full-stack ecommerce website
                   </li>
-                  <li>An Ethereum smart contract deployed on the main net</li>
+                  <li>
+                    <a
+                      href="https://favorite-color-eth.onrender.com"
+                      className="faq-link"
+                    >
+                      Favorite Color
+                    </a>
+                    - An Ethereum smart contract deployed on the main net
+                  </li>
                 </ul>,
               ]}
             />
