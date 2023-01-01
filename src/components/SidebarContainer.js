@@ -14,6 +14,8 @@ import plantMobile from "../images/Plant-Framed-Mobile.png";
 import planeMobile from "../images/Plane-Framed-Mobile.png";
 import spaceMobile from "../images/Space-Framed-Mobile.png";
 import chuckMobile from "../images/Chuck-Framed-Mobile.png";
+import FaqQuestion from "./FaqQuestion";
+import FaqAnswer from "./FaqAnswer";
 
 export default function SidebarContainer(props) {
   const { imgStatus, screenSize, setImgStatus, setScrollDirection } = props;
@@ -233,93 +235,87 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
         <div className="faq-container">
           <HeadlineContainer headline={`FAQs`} />
           <div className="faq">
-            <div className="faq-question">
-              Q: Why did you make this website?
-            </div>
-            <div className="faq-answer">
-              A: My career is pretty textured. That can be a tough thing to
+            <FaqQuestion content={`Q: Why did you make this website?`} />
+            <FaqAnswer
+              content={`A: My career is pretty textured. That can be a tough thing to
               communicate on a resume; so, I thought this website might help me
-              introduce myself in a narrative way.
-            </div>
-          </div>
-          <br />
-          <div className="faq">
-            <div className="faq-question">
-              Q: And now you want to be a software engineer?
-            </div>
-            <div className="faq-answer">
-              A: That's right! I built some great projects during my software
-              engineering immersive at Fullstack Academy, including:
-              <ul>
-                <li>
-                  An ecommerce website with a heavy focus on gifting and
-                  algorithimic gift suggestions
-                </li>
-                <li>An Ethereum smart contract deployed on the main net</li>
-              </ul>
-            </div>
-          </div>
-          <br />
-          <div className="faq">
-            <div className="faq-question">Q: What are you working on now?</div>
-            <div className="faq-answer">
-              A: Since graduating from Fullstack Academy in December 2022, I've
-              been building several projects.
-              <ul>
-                <li>I built this website</li>
-                <li>
-                  I'm working on a full stack customer service tool to help
-                  agents
-                </li>
-                <li>
-                  A few fun projects focused on Magic: the Gathering (probably
-                  the greatest game ever made).
-                </li>
-              </ul>
-              <div>
-                Check out my
+              introduce myself in a narrative way.`}
+            />
+            <br />
+            <FaqQuestion
+              content={`Q: And now you want to be a software engineer?`}
+            />
+            <FaqAnswer
+              content={[
+                `A: That's right! I built some great projects during my software
+              engineering immersive at Fullstack Academy, including:`,
+                <ul>
+                  <li>
+                    An ecommerce website with a heavy focus on gifting and
+                    algorithimic gift suggestions
+                  </li>
+                  <li>An Ethereum smart contract deployed on the main net</li>
+                </ul>,
+              ]}
+            />
+            <br />
+            <FaqQuestion content={`Q: What are you working on now?`} />
+            <FaqAnswer
+              content={[
+                `A: Since graduating from Fullstack Academy in December 2022, I've
+            been building several projects.`,
+                <ul>
+                  <li>I built this website</li>
+                  <li>
+                    I'm working on a full stack customer service tool to help
+                    agents
+                  </li>
+                  <li>
+                    A few fun projects focused on Magic: the Gathering (probably
+                    the greatest game ever made).
+                  </li>
+                </ul>,
+                `Check out my`,
                 <a href="https://www.github.com/prifkind" className="faq-link">
                   Github repos
-                </a>{" "}
-                for more info.
-              </div>
-            </div>
+                </a>,
+                `for more info.`,
+              ]}
+            />
+            <br />
+            <FaqQuestion
+              content={`Q: If you went to culinary school, why are there no recipies on this
+          page?`}
+            />
+            <FaqAnswer
+              content={
+                (`A: I didn't really think anyone was coming here for recipies, but
+            ok. Here's my recipe for`,
+                (
+                  <a
+                    className="faq-link"
+                    href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
+                  >
+                    chocolate cookies with tahini.
+                  </a>
+                ))
+              }
+            />
+            <br />
+            <FaqQuestion content={`Q: Did you really go to space?`} />
+            <FaqAnswer content={`A: No.`} />
+            <br />
+            <FaqQuestion
+              content={`Q: Is it true you once drove the Oscar Mayer Weinermobile?`}
+            />
+            <FaqAnswer
+              content={`A: Absolutely true. It happened in the spring of 2001. My friend
+          Tiffany and I had to stand in the road to stop traffic, but it was
+          worth it.`}
+            />
           </div>
-          <br />
-          <div className="faq">
-            <div className="faq-question">
-              Q: If you went to culinary school, why are there no recipies on
-              this page?
-            </div>
-            <div className="faq-answer">
-              A: I didn't really think anyone was coming here for recipies, but
-              ok. Here's my recipe for
-              <a
-                className="faq-link"
-                href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
-              >
-                chocolate cookies with tahini.
-              </a>
-            </div>
-          </div>
-          <br />
-          <div className="faq">
-            <div className="faq-question">Q: Did you really go to space?</div>
-            <div className="faq-answer">A: No.</div>
-          </div>
-          <br />
-          <div className="faq">
-            <div className="faq-question">
-              Q: Is it true you once drove the Oscar Mayer Weinermobile?
-            </div>
-            <div className="faq-answer">
-              A: Absolutely true. It happened in the spring of 2001. My friend
-              Tiffany and I had to stand in the road to stop traffic, but it was
-              worth it.
-            </div>
-          </div>
-          <br />
         </div>
+        <br />
         <br />
         <div ref={bottom}></div>
       </span>
