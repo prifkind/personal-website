@@ -224,7 +224,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             <br />,
             `If you're interested in learning more about how my experience can help your business, I would love `,
             <a href="mailto:prifkind@gmail.com" className="faq-link">
-              to chat futher!
+              to chat further!
             </a>,
           ]}
           imgId={`img8`}
