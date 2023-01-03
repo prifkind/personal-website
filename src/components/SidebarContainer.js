@@ -196,7 +196,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
         ) : null}
         <TextContainer
           content={[
-            `During a conversation in`,
+            `During a conversation in a professional group called `,
             <a href="https://www.supportdriven.com" className="faq-link">
               Support Driven
             </a>,
@@ -318,18 +318,17 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           page?`}
             />
             <FaqAnswer
-              content={
-                (`A: I didn't really think anyone was coming here for recipies, but
-            ok. Here's my recipe for`,
-                (
-                  <a
-                    className="faq-link"
-                    href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
-                  >
-                    chocolate cookies with tahini.
-                  </a>
-                ))
-              }
+              content={[
+                `A: I didn't really think anyone was coming here for recipies, but
+            ok. Here's my recipe for `,
+
+                <a
+                  className="faq-link"
+                  href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
+                >
+                  chocolate cookies with tahini.
+                </a>
+              ]}
             />
             <br />
             <FaqQuestion content={`Q: Did you really go to space?`} />
