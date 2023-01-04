@@ -197,10 +197,22 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
         <TextContainer
           content={[
             `During a conversation in a professional group called `,
-            <a href="https://www.supportdriven.com" className="faq-link">
+            <a
+              href="https://www.supportdriven.com"
+              className="faq-link"
+              target="_blank"
+            >
               Support Driven
             </a>,
-            `, I met an incredible Product Manager.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`,
+            `, I met an incredible product leader from `,
+            <a
+              href="https://www.feelcove.com"
+              className="faq-link"
+              target="_blank"
+            >
+              Feelmore Labs
+            </a>,
+            `.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`,
             <br />,
             <br />,
             `It was a crazy idea, and it worked.`,
@@ -263,9 +275,9 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                       className="faq-link"
                     >
                       Cadeau
-                    </a>{" "}
-                    - a gift-giving website that algorithmically makes relevant
-                    gift selections.
+                    </a>
+                    &nbsp;- a gift-giving website that algorithmically makes
+                    relevant gift selections.
                   </li>
                   <li>
                     <a
@@ -274,7 +286,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                     >
                       Sage
                     </a>
-                    - an full-stack ecommerce website
+                    &nbsp;- an full-stack ecommerce website
                   </li>
                   <li>
                     <a
@@ -283,7 +295,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                     >
                       Favorite Color
                     </a>
-                    - An Ethereum smart contract deployed on the main net
+                    &nbsp;- An Ethereum smart contract deployed on the main net
                   </li>
                 </ul>,
               ]}
@@ -295,7 +307,16 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                 `A: Since graduating from Fullstack Academy in December 2022, I've
             been building several projects.`,
                 <ul>
-                  <li>I built this website</li>
+                  <li>
+                    I built this website&nbsp;
+                    <a
+                      href="https://github.com/prifkind/personal-website"
+                      className="faq-link"
+                      target="_blank"
+                    >
+                      (repo)
+                    </a>
+                  </li>
                   <li>
                     I'm working on a full stack customer service tool to help
                     agents
@@ -305,11 +326,11 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                     the greatest game ever made).
                   </li>
                 </ul>,
-                `Check out my`,
+                `Check out my `,
                 <a href="https://www.github.com/prifkind" className="faq-link">
                   Github repos
                 </a>,
-                `for more info.`,
+                ` for more info.`,
               ]}
             />
             <br />
@@ -327,7 +348,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                   href="https://docs.google.com/document/d/101A5GO4zk8eQy1bBxJGKcVlqlqkCvVsN1vAZWyFhfUE/edit?usp=sharing"
                 >
                   chocolate cookies with tahini.
-                </a>
+                </a>,
               ]}
             />
             <br />
