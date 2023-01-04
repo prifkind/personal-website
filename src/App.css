@@ -76,6 +76,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin-top: 5vh;
+  border-right: 1px solid white;
   color: white;
   overflow-y: scroll;
 }
@@ -258,5 +259,16 @@ body {
   .sidebar {
     width: 100vw;
     height: 100vh;
+  }
+
+  .sidebar-container {
+    height: 75vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+    color: white;
+    overflow-y: scroll;
   }
 }
