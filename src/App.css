@@ -95,7 +95,9 @@ body {
 
 .text-container {
   margin-top: 70vh;
+  margin-right: 1vw;
   margin-bottom: 5vh;
+margin-left: 1vw;
   font-family: "Noto Serif Khmer", serif;
   font-size: 18px;
   color: white;
