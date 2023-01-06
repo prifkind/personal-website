@@ -153,7 +153,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
         ) : null}
         <TextContainer
           content={[
-            `From there I joined the luanch team of a startup bank called `,
+            `From there I joined the launch team of a startup bank called `,
             <a
               href="https://www.grasshopper.bank"
               className="faq-link"
@@ -212,7 +212,8 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             >
               Feelmore Labs
             </a>,
-            `.  We began talking about providing high-quality customer service using the best tools imaginable. The idea was to support as many users as possible with as few people as possible.`,
+            `.`,
+            <br />,<br />,`We began talking about providing high-quality customer service using the best tools on the market. The idea was to support as many users as possible, with as few people as possible.`,
             <br />,
             <br />,
             `It was a crazy idea, and it worked.`,
