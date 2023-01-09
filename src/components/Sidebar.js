@@ -6,8 +6,13 @@ import SidebarContainer from "./SidebarContainer";
 import SidebarMenu from "./SidebarMenu";
 
 export default function Sidebar(props) {
-  const { imgStatus, screenSize, scrollDirection, setImgStatus, setScrollDirection } =
-    props;
+  const {
+    imgStatus,
+    screenSize,
+    scrollDirection,
+    setImgStatus,
+    setScrollDirection,
+  } = props;
 
   useEffect(() => {}, [scrollDirection]);
 
@@ -21,7 +26,7 @@ export default function Sidebar(props) {
           screenSize={screenSize}
           setScrollDirection={setScrollDirection}
         />
-        <div>
+        <div className="scroll-arrow">
           {scrollDirection === "arrowDown" ? <DownArrow /> : <UpArrow />}
         </div>
       </div>
