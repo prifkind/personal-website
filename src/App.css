@@ -266,22 +266,24 @@ body {
     width: 100vw;
     height: 100vh;
   }
+
   .sidebar-menu {
     height: 20vh;
+    margin-bottom: 5vh;
   }
 
   .sidebar-container {
-    height: 75vh;
+    height: 60vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 5vh;
     color: white;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .scroll-arrow {
-    height: 5vh;
+    height: 10vh;
   }
 }
