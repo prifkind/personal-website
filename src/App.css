@@ -273,7 +273,7 @@ body {
   }
 
   .sidebar-container {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
