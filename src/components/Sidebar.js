@@ -27,7 +27,13 @@ export default function Sidebar(props) {
           setScrollDirection={setScrollDirection}
         />
         <div className="scroll-arrow">
-          {scrollDirection === "arrowDown" ? <DownArrow /> : <UpArrow />}
+          {scrollDirection === "arrowDown" ? (
+            <DownArrow />
+          ) : (
+            <a href="#top">
+              <UpArrow />
+            </a>
+          )}
         </div>
       </div>
     </div>

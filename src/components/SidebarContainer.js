@@ -37,7 +37,7 @@ export default function SidebarContainer(props) {
   return (
     <span>
       <span className="sidebar-container">
-        <div ref={top}></div>
+        <div ref={top} id="top"></div>
         <HeadlineContainer
           headline={`Food. Health. Finance. Gear. Software.`}
           byline={`A career in adventure.`}
@@ -213,7 +213,9 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
               Feelmore Labs
             </a>,
             `.`,
-            <br />,<br />,`We began talking about providing high-quality customer service using the best tools on the market. The idea was to support as many users as possible, with as few people as possible.`,
+            <br />,
+            <br />,
+            `We began talking about providing high-quality customer service using the best tools on the market. The idea was to support as many users as possible, with as few people as possible.`,
             <br />,
             <br />,
             `It was a crazy idea, and it worked.`,
