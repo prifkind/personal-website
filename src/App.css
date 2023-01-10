@@ -48,14 +48,15 @@ body {
 }
 
 .sidebar-menu-item {
+  max-height: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .social-logo {
-  max-height: 45px;
-  max-width: 45px;
+  max-height: 10%;
+  max-width: 10%;
   margin: 5px;
 }
 
@@ -270,7 +271,7 @@ body {
 
   .sidebar-menu {
     height: 20vh;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
   }
 
   .sidebar-container {
@@ -279,9 +280,9 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 5px;
     color: white;
-    /* overflow-y: scroll; */
   }
 
   .scroll-arrow {
@@ -297,18 +298,16 @@ body {
 
   .sidebar-menu {
     height: 20vh;
-    margin-bottom: 5vh;
   }
 
   .sidebar-container {
     height: 65vh;
+    padding-top: 5px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5vh;
     color: white;
-    /* overflow-y: scroll; */
   }
 
   .scroll-arrow {
