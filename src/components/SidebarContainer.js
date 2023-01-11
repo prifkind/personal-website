@@ -163,7 +163,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             </a>,
             ` where I designed the service model.  Opening a bank was an amazing experience.`,
           ]}
-          imgId={`img6a`}
+          imgId={`img6`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
         />
@@ -182,7 +182,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
             <br />,
             `It had the makings of a direction, but I wasn't sure.  After all, what do you do once you open a bank?  Running it wasn't nearly as fun as the launch part.`,
           ]}
-          imgId={`img6`}
+          imgId={`img6a`}
           imgStatus={imgStatus}
           setImgStatus={setImgStatus}
         />
