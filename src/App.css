@@ -265,7 +265,7 @@ body {
 
 @media only screen and (max-width: 390px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
   .sidebar {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
   }
 
@@ -292,7 +292,7 @@ body {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .sidebar {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
   }
 
