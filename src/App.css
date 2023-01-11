@@ -49,6 +49,7 @@ body {
 
 .sidebar-menu-item {
   max-height: 40px;
+  margin-top: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
