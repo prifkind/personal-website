@@ -77,7 +77,6 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  /* margin-top: 1vh; */
   border-right: 1px solid white;
   color: white;
   overflow-y: scroll;
@@ -265,8 +264,24 @@ body {
 /* Mobile devices */
 
 @media only screen and (max-width: 390px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .App {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-image: url("../public/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 1px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+  }
+
   .sidebar {
-    width: 95vw;
+    width: 100vw;
     height: 100vh;
   }
 
@@ -277,6 +292,7 @@ body {
 
   .sidebar-container {
     height: 65vh;
+    width: 100vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -290,12 +306,17 @@ body {
   .scroll-arrow {
     height: 10vh;
   }
+
+  .img-container {
+    width: 0vw;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
   .sidebar {
-    width: 95vw;
+    width: 100vw;
     height: 100vh;
+    /* margin: 0 1vw 0 1vw; */
   }
 
   .sidebar-menu {
