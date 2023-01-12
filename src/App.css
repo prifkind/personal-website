@@ -284,6 +284,7 @@ body {
     margin-bottom: 5vh;
     padding-top: 5px;
     color: white;
+    border-right: 0px solid white;
   }
 
   .scroll-arrow {
@@ -309,6 +310,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     color: white;
+    border-right: 0px solid white;
   }
 
   .scroll-arrow {
