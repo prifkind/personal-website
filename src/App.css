@@ -264,17 +264,19 @@ body {
 /* Mobile devices */
 
 /* iPhone*/
-@media only screen and (max-width: 450px) and (max-height: 900px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (min--moz-device-pixel-ratio: 3),
+  only screen and (-o-min-device-pixel-ratio: 3/1),
+  only screen and (min-device-pixel-ratio: 3) {
   .App {
     text-align: center;
     background-image: url("../public/Background.png");
     background-size: cover;
     background-attachment: fixed;
     perspective: 1px;
-    /* overflow: hidden; */
+    overflow: hidden;
     border: 5px solid red;
     position: fixed;
-
   }
 
   .sidebar {
@@ -283,16 +285,35 @@ body {
     font-family: "Noto Serif Khmer", serif;
     color: white;
     font-size: 36px;
-
   }
 
   .sidebar-menu {
-    height: 25vh;
-    margin-bottom: 5vh;
+    max-height: 20vh;
+    padding-bottom: 3vh;
+    border: 1px solid green;
+  }
+
+  .sidebar-hamburger {
+    margin-top: 5px;
+  }
+
+  .sidebar-menu-item {
+    max-height: 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .social-logo {
+    max-height: 8%;
+    max-width: 8%;
+    margin: 5px;
   }
 
   .sidebar-container {
-    height: 65vh;
+    max-height: 50vh;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -301,18 +322,15 @@ body {
     margin-bottom: 2vh;
     color: white;
     border-right: 0px solid white;
-
   }
 
   .scroll-arrow {
-    height: 5vh;
+    max-height: 5vh;
   }
 }
 
 /* Some Android */
-/* @media only screen and (max-width: 412px) {} */
-
-@media screen and (max-width: 412px) and (max-height: 900px) {
+@media only screen and (max-width: 412px) {
   .sidebar {
     width: 100vw;
     height: 100vh;
