@@ -264,28 +264,34 @@ body {
 /* Mobile devices */
 
 /* iPhone*/
-@media only screen and (max-width: 390px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 390px) and (max-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 
   .App {
-    width: 100vw;
-    height: 100vh;
-    /* min-height: 100%;
-    max-height: 100%; */
+    max-width: 97vw;
+    max-height:99vh;
     text-align: center;
     background-image: url("../public/Background.png");
     background-size: cover;
     background-attachment: fixed;
     perspective: 1px;
-    /* display: flex;
-    flex-flow: row wrap; */
     overflow: hidden;
     border: 5px solid red;
+  }
+
+  .sidebar {
+    max-width: 99%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Noto Serif Khmer", serif;
+    color: white;
+    font-size: 36px;
+    overflow-y: scroll;
+    overflow: hidden;
   }
 
   .sidebar-menu {
     height: 20vh;
   }
-
 
   .sidebar-container {
     height: 65vh;
