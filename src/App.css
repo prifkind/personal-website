@@ -263,32 +263,13 @@ body {
 
 /* Mobile devices */
 
+/* iPhone*/
 @media only screen and (max-width: 390px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
-  .App {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    text-align: center;
-    background-image: url("../public/Background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    perspective: 1px;
-    display: flex;
-    flex-flow: row wrap;
-    overflow: hidden;
-  }
-
-  .sidebar {
-    width: 100vw;
-    height: 100vh;
-  }
 
   .sidebar-menu {
     height: 20vh;
-    /* margin-bottom: 5vh; */
   }
+
 
   .sidebar-container {
     height: 65vh;
@@ -297,18 +278,14 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 5vh;
-    padding-top: 5px;
+    margin-bottom: 2vh;
+    padding-top: 3px;
     color: white;
     border-right: 0px solid white;
   }
 
   .scroll-arrow {
     height: 10vh;
-  }
-
-  .img-container {
-    width: 0vw;
   }
 }
 
