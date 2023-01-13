@@ -264,17 +264,17 @@ body {
 /* Mobile devices */
 
 /* iPhone*/
-@media only screen and (max-width: 414px) and (max-height: 844px)  {
+@media only screen and (max-width: 450px) and (max-height: 900px) {
   .App {
     text-align: center;
     background-image: url("../public/Background.png");
     background-size: cover;
     background-attachment: fixed;
     perspective: 1px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 5px solid red;
     position: fixed;
-    -webkit-overflow-scrolling: auto;
+
   }
 
   .sidebar {
@@ -283,7 +283,7 @@ body {
     font-family: "Noto Serif Khmer", serif;
     color: white;
     font-size: 36px;
-    -webkit-overflow-scrolling: auto;
+
   }
 
   .sidebar-menu {
@@ -301,7 +301,7 @@ body {
     margin-bottom: 2vh;
     color: white;
     border-right: 0px solid white;
-    -webkit-overflow-scrolling: auto;
+
   }
 
   .scroll-arrow {
@@ -310,7 +310,9 @@ body {
 }
 
 /* Some Android */
-@media only screen and (max-width: 412px) {
+/* @media only screen and (max-width: 412px) {} */
+
+@media screen and (max-width: 412px) and (max-height: 900px) {
   .sidebar {
     width: 100vw;
     height: 100vh;
