@@ -276,8 +276,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     perspective: 1px;
-    display: flex;
-    flex-flow: row wrap;
+    /* display: flex;
+    flex-flow: row wrap; */
     overflow: hidden;
     border: 5px solid red;
   }
