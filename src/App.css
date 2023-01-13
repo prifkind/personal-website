@@ -265,10 +265,9 @@ body {
 
 /* iPhone*/
 @media only screen and (max-width: 390px) and (max-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-
   .App {
     max-width: 97vw;
-    max-height:99vh;
+    max-height: 99vh;
     text-align: center;
     background-image: url("../public/Background.png");
     background-size: cover;
@@ -287,6 +286,7 @@ body {
     font-size: 36px;
     overflow-y: scroll;
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   .sidebar-menu {
