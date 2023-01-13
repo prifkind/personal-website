@@ -259,19 +259,11 @@ body {
     z-index: 1;
     transform: rotate(3deg);
   }
-
-  .App {
-    border: 1px solid red;
-  }
 }
 
 /* Mobile devices */
-
-/* Medium iPhones - iPhone 12 - 14 Pro*/
-@media only screen and (-webkit-min-device-pixel-ratio: 3),
-  only screen and (min--moz-device-pixel-ratio: 3),
-  only screen and (-o-min-device-pixel-ratio: 3/1),
-  only screen and (min-device-pixel-ratio: 3) {
+/* iPhone 11 */
+@media only screen and (min-width: 414px) and (max-height: 896px) {
   .App {
     text-align: center;
     background-image: url("../public/Background.png");
@@ -283,6 +275,8 @@ body {
   }
 
   .sidebar {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     font-family: "Noto Serif Khmer", serif;
@@ -296,12 +290,12 @@ body {
   }
 
   .sidebar-hamburger {
-    margin-top: 5px;
+    margin-top: 5%;
   }
 
   .sidebar-menu-item {
     max-height: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -309,13 +303,12 @@ body {
   }
 
   .social-logo {
-    max-height: 8%;
-    max-width: 8%;
-    margin: 5px;
+    max-height: 10%;
+    max-width: 10%;
   }
 
   .sidebar-container {
-    max-height: 50vh;
+    max-height: 55vh;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -331,7 +324,7 @@ body {
   }
 }
 
-/* Large iPhones iPhone 11, iPhone 12-14 Pro Max */
+/* Some Pixel devices */
 @media only screen and (-webkit-min-device-pixel-ratio: 2.6),
   only screen and (min--moz-device-pixel-ratio: 2.6),
   only screen and (-o-min-device-pixel-ratio: 2.6/1),
@@ -347,6 +340,8 @@ body {
   }
 
   .sidebar {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     font-family: "Noto Serif Khmer", serif;
@@ -360,12 +355,12 @@ body {
   }
 
   .sidebar-hamburger {
-    margin-top: 5px;
+    margin-top: 5%;
   }
 
   .sidebar-menu-item {
     max-height: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -373,13 +368,12 @@ body {
   }
 
   .social-logo {
-    max-height: 8%;
-    max-width: 8%;
-    margin: 5px;
+    max-height: 10%;
+    max-width: 10%;
   }
 
   .sidebar-container {
-    max-height: 50vh;
+    max-height: 60vh;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -395,11 +389,11 @@ body {
   }
 }
 
-@media only screen and (min-width: 414px),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2) {
+/* Medium iPhones - iPhone 12 - 14 / Pro*/
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (min--moz-device-pixel-ratio: 3),
+  only screen and (-o-min-device-pixel-ratio: 3/1),
+  only screen and (min-device-pixel-ratio: 3) {
   .App {
     text-align: center;
     background-image: url("../public/Background.png");
@@ -411,6 +405,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
   }
 
   .sidebar {
+    width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     font-family: "Noto Serif Khmer", serif;
@@ -443,7 +438,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
   }
 
   .sidebar-container {
-    max-height: 50vh;
+    max-height: 55vh;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -459,30 +454,4 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
   }
 }
 
-/* Some Android */
-@media only screen and (max-width: 412px) {
-  .sidebar {
-    width: 100vw;
-    height: 100vh;
-    /* margin: 0 1vw 0 1vw; */
-  }
 
-  .sidebar-menu {
-    height: 20vh;
-  }
-
-  .sidebar-container {
-    height: 65vh;
-    padding-top: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
-    border-right: 0px solid white;
-  }
-
-  .scroll-arrow {
-    height: 10vh;
-  }
-}
