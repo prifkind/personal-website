@@ -266,8 +266,6 @@ body {
 /* iPhone*/
 @media only screen and (max-width: 390px) and (max-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .App {
-    max-width: 97vw;
-    max-height: 99vh;
     text-align: center;
     background-image: url("../public/Background.png");
     background-size: cover;
@@ -275,22 +273,22 @@ body {
     perspective: 1px;
     overflow: hidden;
     border: 5px solid red;
+    position: fixed;
+    -webkit-overflow-scrolling: auto;
   }
 
   .sidebar {
-    max-width: 99%;
     display: flex;
     flex-flow: column nowrap;
     font-family: "Noto Serif Khmer", serif;
     color: white;
     font-size: 36px;
-    overflow-y: scroll;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
   }
 
   .sidebar-menu {
-    height: 20vh;
+    height: 25vh;
+    margin-bottom: 5vh;
   }
 
   .sidebar-container {
@@ -301,13 +299,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 2vh;
-    padding-top: 3px;
     color: white;
     border-right: 0px solid white;
+    -webkit-overflow-scrolling: auto;
   }
 
   .scroll-arrow {
-    height: 10vh;
+    height: 5vh;
   }
 }
 

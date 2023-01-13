@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     // Check if the screen size is smaller than 767px
     console.log(`${window.matchMedia("(max-width: 767px)").matches}`);
-    window.matchMedia("(max-width: 767px)").matches
+    window.matchMedia("(max-width: 412px)").matches
       ? setScreenSize(true)
       : setScreenSize(false);
   }, [screenSize]);
