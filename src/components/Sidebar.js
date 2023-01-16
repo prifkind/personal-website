@@ -16,27 +16,29 @@ export default function Sidebar(props) {
 
   useEffect(() => {}, [scrollDirection]);
 
+  const onClickHandler = () => {
+    setScrollDirection("arrowDown");
+  };
+
   if (screenSize) {
     return (
-
-        <div className="sidebar">
-          <SidebarContainer
-            setImgStatus={setImgStatus}
-            imgStatus={imgStatus}
-            screenSize={screenSize}
-            setScrollDirection={setScrollDirection}
-          />
-          <div className="scroll-arrow">
-            {scrollDirection === "arrowDown" ? (
-              <DownArrow />
-            ) : (
-              <a href="#top">
-                <UpArrow />
-              </a>
-            )}
-          </div>
+      <div className="sidebar">
+        <SidebarContainer
+          setImgStatus={setImgStatus}
+          imgStatus={imgStatus}
+          screenSize={screenSize}
+          setScrollDirection={setScrollDirection}
+        />
+        <div className="scroll-arrow">
+          {scrollDirection === "arrowDown" ? (
+            <DownArrow onClick={onClickHandler} />
+          ) : (
+            <a href="#top">
+              <UpArrow />
+            </a>
+          )}
         </div>
-
+      </div>
     );
   }
   return (
