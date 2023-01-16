@@ -324,10 +324,10 @@ body {
 }
 
 /* Pixel devices */
-@media only screen and (-webkit-max-device-pixel-ratio: 2.5),
-  only screen and (max--moz-device-pixel-ratio: 2.5),
-  only screen and (-o-max-device-pixel-ratio: 2.5/1),
-  only screen and (max-device-pixel-ratio: 2.5) {
+@media only screen and (-webkit-max-device-pixel-ratio: 2.5) and (max-width: 767px),
+  only screen and (max--moz-device-pixel-ratio: 2.5) and (max-width: 767px),
+  only screen and (-o-max-device-pixel-ratio: 2.5/1) and (max-width: 767px),
+  only screen and (max-device-pixel-ratio: 2.5) and (max-width: 767px) {
   .App {
     text-align: center;
     background-image: url("../public/Background.png");
