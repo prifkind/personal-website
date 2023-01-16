@@ -316,7 +316,6 @@ body {
     align-items: flex-start;
     margin-bottom: 2vh;
     color: white;
-    border-right: 0px solid white;
   }
 
   .scroll-arrow {
@@ -324,7 +323,70 @@ body {
   }
 }
 
-/* Some Pixel devices */
+/* Pixel devices */
+@media only screen and (-webkit-max-device-pixel-ratio: 2.5),
+  only screen and (max--moz-device-pixel-ratio: 2.5),
+  only screen and (-o-max-device-pixel-ratio: 2.5/1),
+  only screen and (max-device-pixel-ratio: 2.5) {
+  .App {
+    text-align: center;
+    background-image: url("../public/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 1px;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  .sidebar {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Noto Serif Khmer", serif;
+    color: white;
+    font-size: 36px;
+  }
+
+  .sidebar-menu {
+    max-height: 20vh;
+    padding-bottom: 3vh;
+  }
+
+  .sidebar-hamburger {
+    margin-top: 5%;
+  }
+
+  .sidebar-menu-item {
+    max-height: 25px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .social-logo {
+    max-height: 10%;
+    max-width: 10%;
+  }
+
+  .sidebar-container {
+    max-height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2vh;
+    color: white;
+  }
+
+  .scroll-arrow {
+    max-height: 5vh;
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2.6),
   only screen and (min--moz-device-pixel-ratio: 2.6),
   only screen and (-o-min-device-pixel-ratio: 2.6/1),
@@ -381,7 +443,6 @@ body {
     align-items: flex-start;
     margin-bottom: 2vh;
     color: white;
-    border-right: 0px solid white;
   }
 
   .scroll-arrow {
@@ -446,7 +507,6 @@ body {
     align-items: flex-start;
     margin-bottom: 2vh;
     color: white;
-    border-right: 0px solid white;
   }
 
   .scroll-arrow {
@@ -454,6 +514,7 @@ body {
   }
 }
 
+/* Large phones */
 @media only screen and (-webkit-min-device-pixel-ratio: 3.5),
   only screen and (min--moz-device-pixel-ratio: 3.5),
   only screen and (-o-min-device-pixel-ratio: 3.5/1),
@@ -510,7 +571,6 @@ body {
     align-items: flex-start;
     margin-bottom: 2vh;
     color: white;
-    border-right: 0px solid white;
   }
 
   .scroll-arrow {
