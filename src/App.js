@@ -48,6 +48,7 @@ function App() {
           setImgStatus={setImgStatus}
           scrollDirection={scrollDirection}
           setScrollDirection={setScrollDirection}
+          screenSize={screenSize}
         />
         <Content imgStatus={imgStatus} />
       </div>
