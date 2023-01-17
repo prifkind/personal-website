@@ -361,11 +361,76 @@ body {
   .sidebar-container {
     max-height: 95%;
     width: 100vw;
+    padding-bottom: 25%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 2vh;
+    color: white;
+  }
+
+  .sidebar-menu {
+    max-height: 25%;
+    padding-bottom: 3vh;
+    flex-grow: 2;
+  }
+
+  .sidebar-hamburger {
+    margin-top: 5px;
+  }
+
+  .sidebar-menu-item {
+    max-height: 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .social-logo {
+    max-height: 30px;
+    max-width: 30px;
+    margin: 5px;
+  }
+
+  .scroll-arrow {
+    max-height: 5vh;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.6),
+  only screen and (min--moz-device-pixel-ratio: 2.6),
+  only screen and (-o-min-device-pixel-ratio: 2.6/1),
+  only screen and (min-device-pixel-ratio: 2.6) {
+  .App {
+    text-align: center;
+    background-image: url("../public/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 1px;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Noto Serif Khmer", serif;
+    color: white;
+    font-size: 36px;
+  }
+
+  .sidebar-container {
+    max-height: 95%;
+    width: 100vw;
+    padding-bottom: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
     color: white;
   }
 
@@ -391,75 +456,11 @@ body {
   .social-logo {
     max-height: 25px;
     max-width: 25px;
+    margin: 5px;
   }
 
   .scroll-arrow {
-    max-height: 5vh;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2.6),
-  only screen and (min--moz-device-pixel-ratio: 2.6),
-  only screen and (-o-min-device-pixel-ratio: 2.6/1),
-  only screen and (min-device-pixel-ratio: 2.6) {
-  .App {
-    text-align: center;
-    background-image: url("../public/Background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    perspective: 1px;
-    overflow: hidden;
-    position: fixed;
-  }
-
-  .sidebar {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
-    font-family: "Noto Serif Khmer", serif;
-    color: white;
-    font-size: 36px;
-  }
-
-  .sidebar-container {
-    max-height: 80vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 2vh;
-    color: white;
-  }
-
-  .sidebar-menu {
-    max-height: 20vh;
-    padding-bottom: 3vh;
-    flex-grow: 2;
-  }
-
-  .sidebar-hamburger {
-    margin-top: 5%;
-  }
-
-  .sidebar-menu-item {
-    max-height: 25px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .social-logo {
-    max-height: 10%;
-    max-width: 10%;
-  }
-
-  .scroll-arrow {
-    max-height: 5vh;
-
+    max-height: 5%;
   }
 }
 
@@ -545,7 +546,8 @@ body {
   }
 
   .sidebar {
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     font-family: "Noto Serif Khmer", serif;
@@ -554,18 +556,18 @@ body {
   }
 
   .sidebar-container {
-    max-height: 55vh;
+    max-height: 95%;
     width: 100vw;
+    padding-bottom: 20%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 2vh;
     color: white;
   }
 
   .sidebar-menu {
-    max-height: 20vh;
+    max-height: 25%;
     padding-bottom: 3vh;
     flex-grow: 2;
   }
@@ -584,12 +586,12 @@ body {
   }
 
   .social-logo {
-    max-height: 8%;
-    max-width: 8%;
+    max-height: 25px;
+    max-width: 25px;
     margin: 5px;
   }
 
   .scroll-arrow {
-    max-height: 5vh;
+    max-height: 5%;
   }
 }

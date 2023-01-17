@@ -339,7 +339,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           />
           <br />
           <FaqQuestion
-            content={`Q: If you went to culinary school, why are there no recipies on this
+            content={`Q: If you went to culinary school, why are there no recipes on this
           page?`}
           />
           <FaqAnswer
