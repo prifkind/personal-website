@@ -197,7 +197,7 @@ body {
 
 .img6 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 35%;
   z-index: 7;
   transform: rotate(1deg);
@@ -205,8 +205,8 @@ body {
 
 .img6a {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 35%;
+  left: 10%;
   z-index: 8;
   transform: rotate(1deg);
 }
@@ -220,7 +220,7 @@ body {
 
 .img8 {
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 15%;
   z-index: 10;
   transform: rotate(-2deg);
@@ -235,10 +235,10 @@ body {
 }
 
 /* Slightly smaller monitors */
-/* @media only screen and (min-width: 1350px) and (max-width: 1600px) {
+@media only screen and (min-width: 1350px) and (max-width: 1600px) {
   .img-container {
-    max-width: 50%;
-    display: flex;
+    width: 60%;
+    /* display: flex; */
   }
 
   .img2 {
@@ -248,7 +248,8 @@ body {
     z-index: 1;
     transform: rotate(3deg);
   }
-} */
+
+}
 
 /* Smaller still */
 @media only screen and (min-width: 500px) and (max-width: 1350px) {
