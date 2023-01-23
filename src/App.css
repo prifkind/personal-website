@@ -235,7 +235,7 @@ body {
 }
 
 /* Slightly smaller monitors */
-@media only screen and (min-width: 1350px) and (max-width: 1600px) {
+/* @media only screen and (min-width: 1350px) and (max-width: 1600px) {
   .img-container {
     max-width: 50%;
     display: flex;
@@ -248,7 +248,7 @@ body {
     z-index: 1;
     transform: rotate(3deg);
   }
-}
+} */
 
 /* Smaller still */
 @media only screen and (min-width: 500px) and (max-width: 1350px) {
@@ -263,7 +263,7 @@ body {
 
 /* Mobile devices */
 /* iPhone 8+, 11 */
-@media only screen and (-webkit-max-device-pixel-ratio: 2) and (min-width: 414px) and (max-width: 1350px) and (max-height: 896px),
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (min-width: 414px) and (max-width: 500px) and (max-height: 896px),
   only screen and (max--moz-device-pixel-ratio: 2.5) and (min-width: 414px) and (max-height: 896px),
   only screen and (-o-max-device-pixel-ratio: 2.5/1) and (min-width: 414px) and (max-height: 896px),
   only screen and (max-device-pixel-ratio: 2.5) and (min-width: 414px) and (max-height: 896px) {
