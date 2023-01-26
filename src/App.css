@@ -95,12 +95,13 @@ body {
 }
 
 .text-container {
-  margin-top: 70vh;
+  margin-top: 65vh;
   margin-right: 1vw;
   margin-bottom: 5vh;
   margin-left: 1vw;
+  text-align: left;
   font-family: "Noto Serif Khmer", serif;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
