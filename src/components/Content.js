@@ -3,8 +3,9 @@ import ImageContainer from "./ImageContainer";
 import adventureAwaits from "../images/AdventureAwaits-Framed.png";
 import chuck from "../images/Chuck-Framed.png";
 import dangerousCliff from "../images/DangerousCliff-Framed.png";
-import entremet from "../images/Entremet-Framed.png"
+import entremet from "../images/Entremet-Framed.png";
 import graduation from "../images/Graduation-Framed.png";
+import grasshopper from "../images/Grasshopper-Framed.png";
 import headlamp from "../images/Headlamp-Framed.png";
 import plane from "../images/Plane-Framed.png";
 import plant from "../images/Plant-Framed.png";
@@ -49,6 +50,11 @@ export default function Content(props) {
         imgClass={`img6 ${imgStatus.img6}`}
         imgUrl={plane}
         imgStatus={imgStatus.img6}
+      />
+      <ImageContainer
+        imgClass={`img6a ${imgStatus.img6a}`}
+        imgUrl={grasshopper}
+        imgStatus={imgStatus.img6a}
       />
       <ImageContainer
         imgClass={`img7 ${imgStatus.img7}`}

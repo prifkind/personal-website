@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Hamburger from "hamburger-react";
 import github from "../images/Github.png";
 import linkedin from "../images/Linkedin.png";
+import mail from "../images/Mail.png";
 
 export default function SidebarMenu() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="sidebar-menu">
-      <span>
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}
@@ -17,6 +17,10 @@ export default function SidebarMenu() {
         />
         {isOpen ? (
           <div>
+            <div className="sidebar-menu-item">
+              <img src={mail} className="social-logo" />
+                <a href="mailto:prifkind@gmail.com" className="social-link">Email</a>
+            </div>
             <div className="sidebar-menu-item">
               <img src={github} className="social-logo" />
               <a
@@ -39,7 +43,6 @@ export default function SidebarMenu() {
             </div>
           </div>
         ) : null}
-      </span>
     </div>
   );
 }

@@ -12,6 +12,7 @@ function App() {
     img4: false,
     img5: false,
     img6: false,
+    img6a: false,
     img7: false,
     img8: false,
   });
@@ -19,8 +20,9 @@ function App() {
   const [screenSize, setScreenSize] = useState();
 
   useEffect(() => {
-    // Check if the screen size is smaller than 400px
-    window.matchMedia("(max-width: 420px)").matches
+    // Check if the screen size is smaller than 767px
+    console.log(`${window.matchMedia("(max-width: 767px)").matches}`);
+    window.matchMedia("(max-width: 767px)").matches
       ? setScreenSize(true)
       : setScreenSize(false);
   }, [screenSize]);
@@ -46,6 +48,7 @@ function App() {
           setImgStatus={setImgStatus}
           scrollDirection={scrollDirection}
           setScrollDirection={setScrollDirection}
+          screenSize={screenSize}
         />
         <Content imgStatus={imgStatus} />
       </div>
