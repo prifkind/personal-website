@@ -266,31 +266,29 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           />
           <br />
           <FaqQuestion
-            content={`Q: And now you want to be a software engineer?`}
+            content={`Q: So you worked in hospitality, then startups.  Now you're a software engineer?`}
           />
           <FaqAnswer
             content={[
-              `A: That's right! I built some great projects during my software
-              engineering immersive at Fullstack Academy, including:`,
+              `A: That's right! I've been doing some amazing work as a contract-based software engineer, including:`,
               <ul>
                 <li>
                   <a
-                    href="https://cadeau-5cgu.onrender.com"
+                    href="https://www.purplemana.com"
                     className="faq-link"
                   >
-                    Cadeau
+                    Purplemana
                   </a>
-                  &nbsp;- a gift-giving website that algorithmically makes
-                  relevant gift selections.
+                  &nbsp;- helping the crew at Purplemana launch a multi-platform Giveaways page using React Native.
                 </li>
                 <li>
                   <a
-                    href="https://grace-shopper-sage-10g9.onrender.com"
+                    href="https://www.sitecraft.io"
                     className="faq-link"
                   >
-                    Sage
+                    Sitecraft
                   </a>
-                  &nbsp;- an full-stack ecommerce website
+                  &nbsp;- I consulted on several projects for Sitecraft, focusing on front end development using React with TypeScript.
                 </li>
                 <li>
                   <a
@@ -308,8 +306,7 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
           <FaqQuestion content={`Q: What are you working on now?`} />
           <FaqAnswer
             content={[
-              `A: Since graduating from Fullstack Academy in December 2022, I've
-            been building several projects.`,
+              `A: I'm working on several projects`,
               <ul>
                 <li>
                   I built this website&nbsp;
@@ -322,12 +319,10 @@ My name is Peter Rifkind.  This website is about me.  Specifically, my career.
                   </a>
                 </li>
                 <li>
-                  I'm working on a full stack customer service tool to help
-                  agents
+                  I've been doing some amazing work for local businesses helping them improve their online presence.  I'll definitely share those once they're available for public consumption.
                 </li>
                 <li>
-                  A few fun projects focused on Magic: the Gathering (probably
-                  the greatest game ever made).
+                  A few fun projects focused on Magic: the Gathering investing using NodeJs and RabbitMQ.
                 </li>
               </ul>,
               `Check out my `,

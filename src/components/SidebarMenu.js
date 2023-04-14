@@ -8,7 +8,6 @@ export default function SidebarMenu() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="sidebar-menu">
-      <span>
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}
@@ -44,7 +43,6 @@ export default function SidebarMenu() {
             </div>
           </div>
         ) : null}
-      </span>
     </div>
   );
 }

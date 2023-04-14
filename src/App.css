@@ -53,6 +53,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 1%;
 }
 
 .social-logo {
@@ -101,7 +102,7 @@ body {
   margin-left: 1vw;
   text-align: left;
   font-family: "Noto Serif Khmer", serif;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
 }
 
